@@ -1,41 +1,35 @@
-# Node.js dependencies
-node_modules
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# Compiled files
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
 /build
-/out
 
-# Log files
+# misc
+.DS_Store
+*.pem
+
+# debug
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# IDE and editor files
-.vscode
-.idea
+# local env files
+.env*.local
 
-# System files
-.DS_Store
-Thumbs.db
+# vercel
+.vercel
 
-# Environment variables
-.env.local
-.env.development
-.env.production
-
-# Next.js cache
-.next
-
-# Cache directories
-.cache
-.cache-loader
-
-# Coverage directory
-coverage
-
-# Editor-specific files
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw*
+# typescript
+*.tsbuildinfo
+next-env.d.ts
